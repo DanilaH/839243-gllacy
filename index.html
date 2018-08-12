@@ -12,12 +12,12 @@
   	    <img src="img/index-logo.svg" width="#" height="#" alt="логотип «Gllacy Shop»">	
   	  </a>
   	  <ul class="site-navigation">
-  	  	<li><a href="catalog.html">Каталог</a></li>
+  	  	<li class="catalog">Каталог</li>
   	  	<li><a href="delivery.html">Доставка и оплата</a></li>
   	  	<li><a href="ab-company.html">О компании</a></li>
   	  </ul>
   	  <ul class="user-navigation"> 
-  	  	<li class="search-form"></li>
+  	  	<li class="search-form">Поиск</li>
   	  	<li class="login-form">Вход</li> 
   	  	<li class="bascket-form">Пусто</li>
   	  </ul>
@@ -56,7 +56,7 @@
   	  </div>
   	  <div class="chocolate">
   	  	<p class="chocolate-present">Шоколадки даром!</p>
-  	  	<p class="chocolate-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно</p>
+  	  	<p class="chocolate-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
   	  	<a class="button button-chocolate" href="#">Хочу шоколадки!</a>
   	  </div>
   	</section>
@@ -65,7 +65,7 @@
   	  <h2 class="visually-hidden">ХИТЫ!</h2>
   	  <ul class="icecream-list">
   	  	<li class="icecream-item1">
-  	  	  <a href="#">
+  	  	  <a href="orange-icecream.html">
   	  	  	<img class="icecream-image" src="img/creamy-orange.png" width="#" height="#"
   	  	  	alt="Сливочно-бело-оранжевая прохладная мороженка">
   	  	  	<p class="price"><span class="price-value">310 Р</span>/кг</p>
@@ -73,25 +73,25 @@
   	  	  </a>	  
   	  	</li>
   	  	<li class="icecream-item2">
-  	  	  <a href="#">
+  	  	  <a href="coffee-icecream.html">
   	  	  	<img class="icecream-image" src="img/coffee-chocolate.png" width="#" height="#" alt="Приятная светло-кофейная, с вкраплениями шоколадной крошки, мороженка">
   	  	  	<p class="price"><span class="pice-value">380 Р</span>/кг</p>
   	  	  	<p class="icecream-item2-name">Сливочно-кофейное с кусочками шоколада</p>
   	  	  </a>
   	  	</li>
   	  	<li class="icecream-item3">
-  	  	  <a href="#">
+  	  	  <a href="pink-icecream.html">
   	  	  	<img class="icecream-image" src="img/pinky-cream.png" width="#" height="#" alt="Воздушно-розовая мороженка с присыпкой в виде сердечек ^_^">
   	  	  	<p class="price"><span class="price-value">355 Р</span>/кг </p>
   	  	  	<p class="icecream-item3-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
   	  	  </a>	
   	  	</li>
   	  	<li class="icecream-item4">
-  	  		<a href="#">
+  	  		<a href="caramel-icecream.html">
   	  		  <img class="icecream-image" src="img/caramel.png" width="#" height="#" alt="Выглядит, как вкуснейшеее пюре с мясным гуляшом, только на самом деле это сладкая мороженка :)">
-  	  		</a>
   	  		<p class="price"><span class="price-value">415 Р</span>/кг</p>
   	  		<p class="icecream-item4">Сливочное крем-брюле с карамельной подливкой</p>
+  	  		</a>
   	  	</li>
   	  </ul>
   	</section>
@@ -110,7 +110,7 @@
   	<article class="blog">
   	  <h2 class="visually-hidden">Блог</h2>
   	  <h3 class="blog-new">Новое в нашем блоге</h3>
-  	  <p class="blog-name"><a class="blog-link" href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+  	  <p class="blog-name"><a class="blog-link" href="table-setting.html">10 способов сервировки фруктовых щербетов к столу</a></p>
   	</article>
 	
 	<section class="dispatch">
@@ -155,6 +155,39 @@
       Сделано в <a class="button" href="https://htmlacademy.ru">HTML Academy</a> &copy; 2017
     </p>
   </footer>
+  
+  <section class="catalog-popup">
+    <ul class="catalog-popup-list">
+      <li class="catalog-popup-new">
+      	<a href="new.html">Новинки</a>
+      </li>	
+	  <li class="catalog-popup-creamy">
+	  	<a href="creamy.html">Сливочное</a>
+	  </li>
+	  <li class="catalog-popup-sherbet">
+	  	<a href="sherbets.html">Щербеты</a>
+	  </li>
+	  <li class="catalog-popup-fruitice">
+	  	<a href="fruitice.html">Фруктовый лёд</a>
+	  </li>
+	  <li class="catalog-popup-melorin">
+	  	<a href="melorin.html">Мелорин</a>
+	  </li>
+    </ul>
+  </section>
+
+  <section class="modal modal-login">
+  	<!-- FORM-FORM-FORM-FORM -->
+  	<!-- FORM-FORM-FORM-FORM -->
+    <b><a href="#">Забыли пароль?</a></b>
+    <b><a href="#">Новая регистрация</a></b>
+  </section>
+
+  <section class="modal modal-feedback">
+  	<b>Мы обязательно вам ответим</b>
+  	<!-- FORM-FORM-FORM-FORM -->
+  	<!-- FORM-FORM-FORM-FORM -->
+  </section>
 
   </body>
 </html>
