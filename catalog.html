@@ -8,7 +8,7 @@
     <div class="wrapper">
     <header class="main-header">
       <nav class="main-navigation">
-        <img class="logo" src="img/logo.svg" width="#" height="#" alt="Логотип «Gllacy Shop»">  
+        <img class="logo" src="img/logo.svg" width="154" height="64" alt="Логотип «Gllacy Shop»">  
         <ul class="site-navigation">
           <li class="active">Каталог</li>
             <ul class="submenu-list">
@@ -35,32 +35,32 @@
           <li class="user-nav-item user-nav-item-search">
             Поиск
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <p>
+              <div class="modal modal-search">
                 <label class="visually-hidden" for="search">Поиск</label>
                 <input class="textarea textarea-search" id="search" type="text" name="search" placeholder="Что ищем?">
                 <button class="visually-hidden" type="submit">Найти</button>
-              </p>
+              </div>
             </form>
           </li>
           <li class="user-nav-item user-nav-item-login">
             Вход
             <div class="modal modal-login">
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post"> 
-                <p>
+                <div class="form-item">
                   <label class="visually-hidden" for="user=login">Введите электронную почту</label>
                   <input class="textarea textarea-login" id="user-login" type="text" name="e-mail" placeholder="Электронная почта">
-                </p>
-                <p>
+                </div>
+                <div class="form-item">
                   <label class="visually-hidden" for="user-password">Введите пароль</label>
                   <input class="textarea textarea-password" id="user-password" type="password" name="password" placeholder="Пароль">
-                </p>
+                </div>
                 <button class="button" type="submit">Войти</button>
-                <p class="modal-login-text">
+                <div class="form-item modal-login-text">
                   <a href="#">Забыли пароль?</a>
-                </p>
-                <p class="modal-login-text">
+                </div>
+                <div class="form-item modal-login-text">
                   <a href="#">Новая регистрация</a>
-                </p>
+                </div>
               </form>
             </div>
           </li> 
@@ -69,7 +69,7 @@
     	  	  <div class="modal modal-bascket">
                 <form class="bascket-form" action="https://echo.htmlacademy.ru" method="post">
                   <table class="bascket-table">
-                    <tr class="bascket-row bascket-row-1">
+                    <tr class="bascket-row">
                       <td>
                         <button class="delete" type="button">Убрать</button>
                       </td>
@@ -87,7 +87,7 @@
                         300 руб.
                       </td>
                     </tr>
-                    <tr class="bascket-row bascket-row-2">
+                    <tr class="bascket-row">
                       <td>
                         <button class="delete" type="button">Убрать</button>
                       </td>
@@ -104,7 +104,7 @@
                         450 руб.
                       </td>
                     </tr>
-                    <tr class="bascket-row bascket-row-3">
+                    <tr class="bascket-row">
                       <td class="bascket-total">Итого: 750 руб.</td>
                     </tr>
                     <tr class="bascket-row bascket-row-3">
@@ -140,10 +140,10 @@
             </label>
           </legend>
           <select id="sorting">
-            <option>по популярности</option>
-            <option>сначала недорогие</option>
-            <option>сначала дорогие</option>
-            <option>по жирности</option>
+            <option value="popular">по популярности</option>
+            <option value="cheap">сначала недорогие</option>
+            <option value="expensive">сначала дорогие</option>
+            <option value="fatty">по жирности</option>
           </select>
         </fieldset>
         <fieldset>

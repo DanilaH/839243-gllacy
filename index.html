@@ -35,32 +35,32 @@
   	      <li class="user-nav-item user-nav-item-search">
             Поиск
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <p>
+              <div class="modal modal-search">
                 <label class="visually-hidden" for="search">Поиск</label>
                 <input class="textarea textarea-search" id="search" type="text" name="search" placeholder="Что ищем?">
                 <button class="visually-hidden" type="submit">Найти</button>
-              </p>
+              </div>
             </form>
           </li>
-  	  	  <li class="user-nav-item user-nav-item-login">
+          <li class="user-nav-item user-nav-item-login">
             Вход
             <div class="modal modal-login">
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post"> 
-                <p>
+                <div class="form-item">
                   <label class="visually-hidden" for="user=login">Введите электронную почту</label>
                   <input class="textarea textarea-login" id="user-login" type="text" name="e-mail" placeholder="Электронная почта">
-                </p>
-                <p>
+                </div>
+                <div class="form-item">
                   <label class="visually-hidden" for="user-password">Введите пароль</label>
                   <input class="textarea textarea-password" id="user-password" type="password" name="password" placeholder="Пароль">
-                </p>
+                </div>
                 <button class="button" type="submit">Войти</button>
-                <p class="modal-login-text">
+                <div class="form-item modal-login-text">
                   <a href="#">Забыли пароль?</a>
-                </p>
-                <p class="modal-login-text">
+                </div>
+                <div class="form-item modal-login-text">
                   <a href="#">Новая регистрация</a>
-                </p>
+                </div>
               </form>
             </div>
           </li> 
@@ -174,7 +174,10 @@
   	
   	<section class="subscibe">
   	  <p class="subscribe-discription">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и   не слать всякой ненужной ерунды. Честно =)</p>
-  		<!-- FORM-FORM-FORM-FORM -->
+  		<form class="subscribe-form">
+        <label class="visually-hidden" for="subscribe">Введите электронную почту</label>
+        <input class="textarea textarea-subscribe" id="subscribe" type="text" name="subscribe" value="subscribe-email" placeholder="Электронная почта">
+      </form>
   	</section>
   
   	<section class="contact">
@@ -195,25 +198,27 @@
             </span> 
           (с 10 до 20 ежедневно)
         </span>
-        <section class="modal modal-feedback">
-          <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>Мы обязательно вам ответим</p>
-            <p>
-              <label class="visually-hidden" for="name">Введите ваше имя</label>
-              <input class="textarea textarea-name" id="name" type="text" name="name" placeholder="Как вас зовут?">
-            </p>
-            <p>
-              <label class="visually-hidden" for="feedback">Введите вашу почту</label>
-              <input class="textarea textarea-feedback" id="feedback" type="text" name="feedback" placeholder="Ваша почта для ответа?">
-            </p>
-            <p>
-              <label class="visually-hidden" for="comment">Оставьте комментарий</label>
-              <input class="textarea textarea-comment" id="comment" type="text" name="comment" placeholder="Напишите что-нибудь...">
-            </p>              
-            <button class="button" type="submit">Отправить</button>
-            <button class="modal-close" type="button">Закрыть</button>
-          </form>
-        </section>
+        <div class="feedback-shadow">
+          <section class="modal modal-feedback">
+            <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>Мы обязательно вам ответим</p>
+              <div class="fornm-item">
+                <label class="visually-hidden" for="name">Введите ваше имя</label>
+                <input class="textarea textarea-name" id="name" type="text" name="name" placeholder="Как вас зовут?">
+              </div>
+              <div class="form-item">
+                <label class="visually-hidden" for="feedback">Введите вашу почту</label>
+                <input class="textarea textarea-feedback" id="feedback" type="text" name="feedback" placeholder="Ваша почта для ответа?">
+              </div>
+              <div class="form-item">
+                <label class="visually-hidden" for="comment">Оставьте комментарий</label>
+                <input class="textarea textarea-comment" id="comment" type="text" name="comment"   placeholder="Напишите что-нибудь...">
+              </div>              
+              <button class="button" type="submit">Отправить</button>
+              <button class="modal-close" type="button">Закрыть</button>
+            </form>
+          </section>
+        </div>
   	  </p>
   	    <!-- MAP-MAP-MAP-MAP -->
   	</section>
