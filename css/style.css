@@ -1,0 +1,357 @@
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+
+  background-color: #849d8f;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.button {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #ed5d3e;
+  border: none;
+}
+
+.button:hover {
+  background-color: #f17c64;
+}
+
+.button:active {
+  background-color: #ed5d3e;
+}
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 18px;
+
+  background-color: #849d8f;
+}
+
+.site-navigation,
+.submenu-list,
+.user-nav-list {
+  list-style: none;
+}
+
+.site-navigation a {
+  color: #ffffff;
+}
+
+.site-navigation li {
+  background-image: linear-gradient(to right, rgba(157, 177, 165, 0.5) 100%, transparent 0%);
+  background-position: 0 16px;
+  background-repeat: repeat-x;
+  background-size: 4px 1px;
+}
+
+.submenu-list {
+  background-color: #ffffff;
+}
+
+.submenu-list a {
+  color: #323232;
+} 
+
+.submenu-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.submenu-item-1 {
+  font-weight: 700;
+}
+
+.submenu-item:hover {
+  background-color: #fbded7;
+}
+
+.submenu-item:active {
+  background-color: #f6b5a5;
+}
+
+.hours {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.telephone {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.slider-item {
+  text-align: center;
+}
+
+.slider-item-text {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+}
+
+.slider-button {
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.banner-1 {
+  color: #ffffff;
+
+  background-color: #631325;
+  background-image: url(../img/raspberry-back.jpg);
+}
+
+.banner-2 {
+  color: #ffffff;
+
+  background-color: #3f261a;
+  background-image: url(../img/chocolate-back.jpg);
+}
+
+.banner-header {
+  font-size: 35px;
+  line-height: 41px;
+}
+
+.banner-text {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.price {
+  font-size: 30px;
+  line-height: 45px
+}
+
+.price-value {
+  font-size: 45px;
+}
+
+.catalog-item-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+
+  background-image: linear-gradient(to right, rgba(157, 177, 165, 0.5) 100%, transparent 0%);
+  background-position: 0 18px;
+  background-repeat: repeat-x;
+  background-size: 4px 1px;
+}
+
+.about-container {
+  color: #323232;
+
+  background-color: #ecdfc5;
+  background-image: url(../img/wafer-back.jpg);
+}
+
+.about-definition {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px
+}
+
+.about-list {
+  list-style: none;
+}
+
+.about-item {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.blog-container {
+  color: #323232;
+
+  background-color: #ffffff;
+  background-image: url(../img/strawberry-back.jpg);
+}
+
+.blog-new {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.blog-link {
+  font-size: 24px;
+  line-height: 30px;
+  color: #323232;
+
+  text-decoration: underline;
+}
+
+.subscribe-container {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #5a5a5a;
+
+  background-color: #f8f7f4;
+}
+
+.contact-container {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+
+.contact-text-bold {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.feedback-container {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.feedback-container p {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.info-list {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+
+  list-style: none;
+}
+
+.info-item {
+  background-image: linear-gradient(to right, rgba(157, 177, 165, 0.5) 100%, transparent 0%);
+  background-position: 0 14px;
+  background-repeat: repeat-x;
+  background-size: 4px 1px;
+}
+
+.info-item-1 {
+  font-weight: 700;
+}
+
+.breadcrumbs-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;	
+
+  list-style: none;
+
+  background-image: linear-gradient(to right, rgba(157, 177, 165, 0.5) 100%, transparent 0%);
+  background-position: 0 14px;
+  background-repeat: repeat-x;
+  background-size: 4px 1px;
+}
+
+.breadcrumbs-current {
+  background-image: none;
+}
+
+.modal-bascket {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #323232;
+
+  background-color: #f8f7f4;
+}
+
+.count{
+  color: #999999;
+}
+
+.bascket-product {
+  color: #323232;
+}
+
+.bascket-total {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px
+}
+
+.filter-container {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.filter-text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.filter-container ul{
+  list-style: none;
+}
+
+.filter-text-sorting:hover {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.pagination-item-current {
+  color: #323232;
+
+  background-color: #ffffff;
+}
+
+.copyright-text {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.copyright-link {
+  background-image: linear-gradient(to right, rgba(157, 177, 165, 0.5) 100%, transparent 0%);
+  background-position: 0 12px;
+  background-repeat: repeat-x;
+  background-size: 4px 1px;
+}
