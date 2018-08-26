@@ -16,6 +16,14 @@ a {
   color: #ffffff;
 }
 
+.wrapper {
+  min-width: 900px;
+  max-width: 1200px;
+  min-height: 2400px;
+  margin: 0 auto;
+  padding: 9px 27px 25px 27px;
+}
+
 .button {
   font-size: 18px;
   line-height: 24px;
@@ -35,24 +43,31 @@ a {
   background-color: #ed5d3e;
 }
 
-.main-navigation {
+.main-nav {
+  display: flex;
+  align-items: flex-start;
+
   font-size: 16px;
   line-height: 18px;
 
   background-color: #849d8f;
 }
 
-.site-navigation,
+.logo {
+  margin-right: 22px;
+}
+
+.site-nav,
 .submenu-list,
 .user-nav-list {
   list-style: none;
 }
 
-.site-navigation a {
+.site-nav a {
   color: #ffffff;
 }
 
-.site-navigation li {
+.site-nav li {
   background-image: linear-gradient(to right, rgba(157, 177, 165, 0.5) 100%, transparent 0%);
   background-position: 0 16px;
   background-repeat: repeat-x;
@@ -60,6 +75,9 @@ a {
 }
 
 .submenu-list {
+  margin-right: 85px;
+  padding: 0;
+
   background-color: #ffffff;
 }
 
@@ -85,16 +103,40 @@ a {
   background-color: #f6b5a5;
 }
 
+.user-nav-list {
+  margin-left: auto;
+  display: flex;
+}
+
+.hours-phone-container {
+ float: right;
+
+ display: flex;
+ flex-direction: row-reverse;
+ flex-wrap: wrap;
+ width: 177px;
+ height: 42px;
+}
+
 .hours {
+  margin: 0;
+  margin-bottom: 10px;
+
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
 }
 
 .telephone {
+  margin: 0;
+
   font-size: 22px;
   font-weight: 700;
   line-height: 24px;
+}
+
+.slider-list {
+  list-style: none;
 }
 
 .slider-item {
@@ -112,7 +154,19 @@ a {
   line-height: 44px;
 }
 
+.banner-container {
+  display: flex;
+  margin-bottom: 43px;
+}
+
 .banner-1 {
+  min-width: 420px;
+  max-width: 560px;
+  min-height: 230px;
+  padding-left: 18px;
+  padding-right: 28px;
+  margin-right: 26px;
+
   color: #ffffff;
 
   background-color: #631325;
@@ -120,6 +174,13 @@ a {
 }
 
 .banner-2 {
+  min-width: 420px;
+  max-width: 560px;
+  min-height: 230px;
+  padding-left: 18px;
+  padding-right: 28px;
+  margin-left: auto;
+
   color: #ffffff;
 
   background-color: #3f261a;
@@ -137,7 +198,22 @@ a {
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin-bottom: 43px;
+
   list-style: none;
+}
+
+.catalog-item {
+  width: 267px;
+  min-height: 322px;
+}
+
+.catalog-item:nth-child(4n){
+  margin-right: 0;
 }
 
 .price {
@@ -153,6 +229,7 @@ a {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
+  text-align: center;
 
   background-image: linear-gradient(to right, rgba(157, 177, 165, 0.5) 100%, transparent 0%);
   background-position: 0 18px;
@@ -161,6 +238,9 @@ a {
 }
 
 .about-container {
+  min-width: 860px;
+  margin-bottom: 40px;
+
   color: #323232;
 
   background-color: #ecdfc5;
@@ -183,11 +263,29 @@ a {
   line-height: 22px;
 }
 
+.blog-subscribe-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog {
+  flex-basis: 50%;
+}
+
+.subscribe {
+  flex-basis: 50%;
+}
+
 .blog-container {
+  min-width: 420px;
+  min-height: 220px;
+  margin-right: 20px;
+
   color: #323232;
 
   background-color: #ffffff;
   background-image: url(../img/strawberry-back.jpg);
+  background-position: 20% 40%;
 }
 
 .blog-new {
@@ -205,6 +303,9 @@ a {
 }
 
 .subscribe-container {
+  min-width: 420px;
+  min-height: 220px;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -243,11 +344,21 @@ a {
   line-height: 28px;
 }
 
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
 .social-list {
+  padding: 0;
+
   list-style: none;
 }
 
 .info-list {
+  padding: 0;
+
   font-size: 13px;
   font-weight: 400;
   line-height: 18px;
@@ -266,7 +377,15 @@ a {
   font-weight: 700;
 }
 
+.breadcrumbs-list {
+  display: flex;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
 .breadcrumbs-item {
+  margin-right: 15px;
+
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;	
@@ -281,6 +400,11 @@ a {
 
 .breadcrumbs-current {
   background-image: none;
+}
+
+.page-title {
+  font-size: 35px;
+  line-height: 41px;
 }
 
 .modal-bascket {
@@ -306,6 +430,83 @@ a {
   line-height: 18px
 }
 
+.form-filter {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 860px;
+  height: 135;
+  margin-bottom: 39px;
+}
+
+.form-filter fieldset {
+  padding: 0;
+}
+
+.sorting-field {
+  width: 193px;
+  height: 60px;
+  margin: 0;
+
+  border: none;
+}
+
+.sorting-container {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.drag-slider-background {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.price-field {
+  width: 218px;
+  height: 60px;
+  margin-right: 15px;
+  margin: 0;
+
+  border: none;
+}
+
+.fats-field {
+  width: 420px;
+  height: 60px;
+  margin: 0;
+
+  border: none;
+}
+
+.filter-radio-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fillers-field {
+  align-self: flex-end;
+  width: 702px;
+  height: 60px;
+  margin: 0;
+
+  border: none;
+}
+
+.filter-checkbox-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
 .filter-container {
   font-size: 16px;
   font-weight: 500;
@@ -317,8 +518,24 @@ a {
   line-height: 16px;
 }
 
-.filter-container ul{
-  list-style: none;
+.filter-button {
+  align-self: flex-end;
+
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  width: 144px;
+  height: 37px;
+
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter-button:hover {
+  background-color: #fbfcfb;
+}
+
+.filter-button:active {
+  background-color: #fbfcfb;
 }
 
 .filter-text-sorting:hover {
@@ -328,16 +545,26 @@ a {
 }
 
 .pagination-list {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 80px;
+
   list-style: none;
 }
 
 .pagination-item {
+  margin-right: 16px;
+
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
 }
 
-.pagination-item-current {
+.pagination-item:last-child {
+  margin-right: 0;
+}
+
+.pagination-link-current {
   color: #323232;
 
   background-color: #ffffff;
