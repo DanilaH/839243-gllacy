@@ -37,7 +37,7 @@
   	    </ul>
   	    <ul class="user-nav-list"> 
   	      <li class="user-nav-item user-nav-item-search">
-            Поиск
+            <span class="text-nav">Поиск</span>
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
               <div class="modal modal-search">
                 <label class="visually-hidden" for="search">Поиск</label>
@@ -47,7 +47,7 @@
             </form>
           </li>
           <li class="user-nav-item user-nav-item-login">
-            Вход
+            <span class="text-nav">Вход</span>
             <div class="modal modal-login">
               <form class="login-form" action="https://echo.htmlacademy.ru" method="post"> 
                 <div class="form-item">
@@ -69,7 +69,7 @@
             </div>
           </li> 
   	  	  <li class="user-nav-item user-nav-item-cart">
-            Пусто
+            <span class="text-nav">Пусто</span>
           </li>
   	    </ul>
   	  </nav>
@@ -132,32 +132,44 @@
    	  	    <a href="orange-icecream.html">
     	 	      <img class="catalog-image" src="img/creamy-orange.jpg" width="#" height="#" alt="Сливочно-бело-оранжевая прохладная мороженка">
     	  	    <p class="price"><span class="price-value">310 ₽</span>/кг</p>
-    	  	    <p class="catalog-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-    	  	  </a>	  
+              <div class="name-center">
+    	  	      <p class="catalog-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+              </div>
+    	  	  </a>
+            <a class="button button-catalog" href="#">Быстрый просмотр</a>	  
     	    </li>
     	 	  <li class="catalog-item catalog-item-2">
             <p class="catalog-item-hit">ХИТ</p>
   	  	    <a href="coffee-icecream.html">  	  	  	
               <img class="catalog-image" src="img/coffee-chocolate.jpg" width="#" height="#" alt="Приятная светло-кофейная, с вкраплениями шоколадной крошки, мороженка">
     	        <p class="price"><span class="price-value">380 ₽</span>/кг</p>
-    	 	      <p class="catalog-item-name">Сливочно-кофейное с кусочками шоколада</p>
+              <div class="name-center">
+    	 	        <p class="catalog-item-name">Сливочно-кофейное с кусочками шоколада</p>
+              </div>
            </a>
+           <a class="button button-catalog" href="#">Быстрый просмотр</a>
     	    </li>
     	    <li class="catalog-item catalog-item-3">
             <p class="catalog-item-hit">ХИТ</p>
     	  	  <a href="pink-icecream.html">
     	  	    <img class="catalog-image" src="img/pinky-cream.jpg" width="#" height="#" alt="Воздушно-розовая мороженка с присыпкой в виде сердечек ^_^">
     	  	    <p class="price"><span class="price-value">355 ₽</span>/кг </p>
-    	  	    <p class="catalog-item-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
-    	       </a>	
+              <div class="name-center">
+    	  	      <p class="catalog-item-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
+              </div>
+    	       </a>
+             <a class="button button-catalog" href="#">Быстрый просмотр</a>	
     	    </li>
     	    <li class="catalog-item catalog-item-4">
             <p class="catalog-item-hit">ХИТ</p>
     	  	  <a href="caramel-icecream.html">
     	  		  <img class="catalog-image" src="img/caramel.jpg" width="#" height="#" alt="Выглядит, как вкуснейшеее пюре с мясным гуляшом, только на самом деле это   сладкая мороженка :)">
     	  	    <p class="price"><span class="price-value">415 ₽</span>/кг</p>
-    	  	    <p class="catalog-item-name">Сливочное крем-брюле с карамельной подливкой</p>
+              <div class="name-center">
+    	  	      <p class="catalog-item-name">Сливочное крем-брюле с карамельной подливкой</p>
+              </div>
       		  </a>
+            <a class="button button-catalog" href="#">Быстрый просмотр</a>
       	  </li>
   	    </ul>
   	  </section>
@@ -190,6 +202,7 @@
   		      <form class="subscribe-form">
               <label class="visually-hidden" for="subscribe">Введите электронную почту</label>
               <input class="textarea textarea-subscribe" id="subscribe" type="text" name="subscribe" placeholder="Электронная почта">
+              <button class="button" type="submit">Отправить</button>
             </form>
           </div>
   	    </section>
@@ -253,13 +266,13 @@
         </ul>
       </div>
   	  <ul class="info-list">
-  	    <li class="info-list-item-1"><a href="providers.html">Для поставщиков</a></li>
-  	    <li class="info-list-item-2"><a href="producttion.html">О прооизводстве</a></li>
-  	    <li class="info-list-item-3"><a href="documents.html">Наши документы</a></li>
-  	    <li class="info-list-item-4"><a href="standarts.html">Экологические стандарты</a></li>
+  	    <li class="info-item-1"><a href="providers.html">Для поставщиков</a></li>
+  	    <li class="info-item-2"><a href="producttion.html">О прооизводстве</a></li>
+  	    <li class="info-item-3"><a href="documents.html">Наши документы</a></li>
+  	    <li class="info-item-4"><a href="standarts.html">Экологические стандарты</a></li>
   	  </ul>
   	  <p class="footer-copyright">
-        <span class="copyright-text">Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</span>
+        <span class="copyright-text">Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> &copy; 2017</span>
       </p>
     </footer>
   

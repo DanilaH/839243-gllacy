@@ -31,16 +31,19 @@ a {
   text-align: center;
   vertical-align: middle;
 
-  background-color: #ed5d3e;
+  background: linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
   border: none;
 }
 
 .button:hover {
-  background-color: #f17c64;
+  background: #f07963;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
 }
 
 .button:active {
-  background-color: #ed5d3e;
+  background: linear-gradient( 90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 }
 
 .main-nav {
@@ -68,10 +71,7 @@ a {
 }
 
 .site-nav li {
-  background-image: linear-gradient(to right, rgba(157, 177, 165, 0.5) 100%, transparent 0%);
-  background-position: 0 16px;
-  background-repeat: repeat-x;
-  background-size: 4px 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 }
 
 .submenu-list {
@@ -106,6 +106,12 @@ a {
 .user-nav-list {
   margin-left: auto;
   display: flex;
+}
+
+.text-nav {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
 }
 
 .hours-phone-container {
@@ -216,6 +222,10 @@ a {
   margin-right: 0;
 }
 
+.catalog-item:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
 .price {
   font-size: 30px;
   line-height: 45px
@@ -225,16 +235,19 @@ a {
   font-size: 45px;
 }
 
+.name-center {
+  text-align: center;
+}
+
 .catalog-item-name {
+  display: inline;
+ 
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
   text-align: center;
 
-  background-image: linear-gradient(to right, rgba(157, 177, 165, 0.5) 100%, transparent 0%);
-  background-position: 0 18px;
-  background-repeat: repeat-x;
-  background-size: 4px 1px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 }
 
 .about-container {
@@ -373,7 +386,7 @@ a {
   background-size: 4px 1px;
 }
 
-.info-item-1 {
+.info-item-1 a{
   font-weight: 700;
 }
 
@@ -526,16 +539,25 @@ a {
   line-height: 18px;
   width: 144px;
   height: 37px;
+  color: #ffffff;
 
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.2);
 }
 
 .filter-button:hover {
-  background-color: #fbfcfb;
+  color: rgb(50, 50, 50);
+
+  background-color: rgb(255, 255, 255);
 }
 
 .filter-button:active {
-  background-color: #fbfcfb;
+  color: rgb(50, 50, 50);
+
+  background-color: rgb(237, 237, 237);
+  box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.004);
 }
 
 .filter-text-sorting:hover {
@@ -576,9 +598,6 @@ a {
   line-height: 16px;
 }
 
-.copyright-link {
-  background-image: linear-gradient(to right, rgba(157, 177, 165, 0.5) 100%, transparent 0%);
-  background-position: 0 12px;
-  background-repeat: repeat-x;
-  background-size: 4px 1px;
+.copyright-text a{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 }
