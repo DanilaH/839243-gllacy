@@ -13,7 +13,7 @@
       <nav class="main-nav">
         <img class="logo" src="img/logo.svg" width="154" height="64" alt="Логотип «Gllacy Shop»">  
         <ul class="site-nav">
-          <li class="site-nav-item active">Каталог
+          <li class="site-nav-item active"><span>Каталог<span>
             <ul class="submenu-list">
               <li class="submenu-item submenu-item-1">
                 <a href="new.html">Новинки</a>
@@ -134,7 +134,7 @@
     
     <div class="breadcrumbs">
       <ul class="breadcrumbs-list">
-        <li class="breadcrumbs-item"><a href="index.html">Главная<span class="double-bracket">&#187;</span></a></li>
+        <li class="breadcrumbs-item"><a href="index.html">Главная</a><span class="double-bracket">&#187;</span></li>
         <li class="breadcrumbs-item"><a href="catalog.html">Каталог</a><span class="double-bracket">&#187;</span></li>
         <li class="breadcrumbs-item breadcrumbs-current">Сливочное</li>
       </ul>
@@ -182,19 +182,19 @@
           </legend>
           <ul class="filter-radio-list">
             <li class="filter-radio-item">
-              <input class="visually-hidden filter-input filter-input-radio" id="filter-zero" type="radio" name="percent-group" value="zero-percent">
+              <input class="visually-hidden filter-input filter-radio" id="filter-zero" type="radio" name="percent-group" value="zero-percent">
               <label for="filter-zero">0%</label>
             </li>
             <li class="filter-radio-item">
-              <input class="visually-hidden filter-input filter-input-radio" id="filter-ten" type="radio" name="percent-group" value="until-ten-percent" checked>
+              <input class="visually-hidden filter-input filter-radio" id="filter-ten" type="radio" name="percent-group" value="until-ten-percent" checked>
               <label for="filter-ten">до 10%</label>
             </li>
             <li class="filter-radio-item">
-              <input class="visually-hidden filter-input filter-input-radio" id="filter-until-thirty" type="radio" name="percent-group" value="until-thirty-percent">
+              <input class="visually-hidden filter-input filter-radio" id="filter-until-thirty" type="radio" name="percent-group" value="until-thirty-percent">
               <label for="filter-until-thirty">до 30%</label>
             </li>
             <li>
-              <input class="visually-hidden filter-input filter-input-radio" id="filter-above-thirty" type="radio" name="percent-group" value="above-thirty-percent">
+              <input class="visually-hidden filter-input filter-radio" id="filter-above-thirty" type="radio" name="percent-group" value="above-thirty-percent">
               <label for="filter-above-thirty">выше 30%</label>
             </li>
           </ul>
@@ -205,23 +205,28 @@
           </legend>
           <ul class="filter-checkbox-list">
             <li class="filter-checkbox-item">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-chocolate" type="checkbox" name="chocolate" checked>
+              <input class="visually-hidden filter-input filter-checkbox" id="filter-chocolate" type="checkbox" name="chocolate" checked>
+              <span class="checkbox-indicator"></span>
               <label for="filter-chocolate">шоколадные</label>
             </li>
             <li class="filter-checkbox-item">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-sugar-powder" type="checkbox" name="sugar-powder" checked>
+              <input class="visually-hidden filter-input filter-checkbox" id="filter-sugar-powder" type="checkbox" name="sugar-powder" checked>
+              <span class="checkbox-indicator"></span>
               <label for="filter-sugar-powder">сахарные присыпки</label>
             </li>
             <li class="filter-checkbox-item">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-fruit"type="checkbox" name="fruit">
+              <input class="visually-hidden filter-input filter-checkbox" id="filter-fruit"type="checkbox" name="fruit">
+              <span class="checkbox-indicator"></span>
               <label for="filter-fruit">фрукты</label>
             </li>
             <li class="filter-checkbox-item">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-syrop"type="checkbox" name="syrop">
+              <input class="visually-hidden filter-input filter-checkbox" id="filter-syrop"type="checkbox" name="syrop">
+              <span class="checkbox-indicator"></span>
               <label for="filter-syrop">сиропы</label>
             </li>
             <li class="filter-checkbox-item">
-              <input class="visually-hidden filter-input filter-input-checkbox" id="filter-jam"    type="checkbox" name="jam">
+              <input class="visually-hidden filter-input filter-checkbox" id="filter-jam"    type="checkbox" name="jam">
+              <span class="checkbox-indicator"></span>
             <label for="filter-jam">джемы</label>
             </li>
           </ul>
@@ -242,7 +247,9 @@
     	  	  	  <p class="catalog-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
               </div>
     	  	  </a>
-    	  	  <a class="button button-catalog" href="#">Быстрый просмотр</a>	  
+            <div class="shadow">
+    	  	    <a class="button button-catalog" href="#">Быстрый просмотр</a> 
+            </div>
     	  	</li>
     	  	<li class="catalog-item catalog-item-2">
     	  	  <a href="coffee-icecream.html">
@@ -252,15 +259,21 @@
     	  	  	  <p class="catalog-item-name">Сливочно-кофейное с кусочками шоколада</p>
               </div>
     	  	  </a>
-    	  	  <a class="button button-catalog" href="#">Быстрый просмотр</a>
+    	  	  <div class="shadow">
+              <a class="button button-catalog" href="#">Быстрый просмотр</a> 
+            </div>
     	  	</li>
     	  	<li class="catalog-item catalog-item-3">
     	  	  <a href="pink-icecream.html">
     	  	  	<img class="catalog-image" src="img/pinky-cream.jpg" width="267" height="267" alt="Воздушно-розовая мороженка с присыпкой в виде сердечек ^_^">
     	  	  	<p class="price"><span class="price-value">355 ₽</span>/кг </p>
-    	  	  	<p class="catalog-item-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
+              <div class="name-center">
+    	  	  	  <p class="catalog-item-name">Сливочно-клубничное с присыпкой из белого шоколада</p>
+              </div>
     	  	  </a>
-    	  	  <a class="button button-catalog" href="#">Быстрый просмотр</a>	
+    	  	  <div class="shadow">
+              <a class="button button-catalog" href="#">Быстрый просмотр</a> 
+            </div>
     	  	</li>
     	  	<li class="catalog-item catalog-item-4">
     	  	  <a href="caramel-icecream.html">
@@ -270,7 +283,9 @@
     	  		  <p class="catalog-item-name">Сливочное крем-брюле с карамельной подливкой</p>
             </div>
     	  	  </a>
-    	  	  <a class="button button-catalog" href="#">Быстрый просмотр</a>
+    	  	  <div class="shadow">
+              <a class="button button-catalog" href="#">Быстрый просмотр</a> 
+            </div>
     	  	</li>
     	  	<li class="catalog-item catalog-item-5">
     	  	  <a href="сowberry.html">
@@ -280,7 +295,9 @@
     	  	  	  <p class="catalog-item-name">Сливочное с брусничным джемом</p>
               </div>
     	  	  </a>
-    	  	  <a class="button button-catalog" href="#">Быстрый просмотр</a>
+    	  	  <div class="shadow">
+              <a class="button button-catalog" href="#">Быстрый просмотр</a> 
+            </div>
     	  	</li>
     	  	<li class="catalog-item catalog-item-6">
     	  	  <a href="blueberry.html">
@@ -290,7 +307,9 @@
     	  	  	  <p class="catalog-item-name">Сливочно-черничное с цельными ягодами черники</p>
               </div>
     	  	  </a>
-    	  	  <a class="button button-catalog" href="#">Быстрый просмотр</a>
+    	  	  <div class="shadow">
+              <a class="button button-catalog" href="#">Быстрый просмотр</a> 
+            </div>
     	  	</li>
     	  	<li class="catalog-item catalog-item-7">
     	  	  <a href="lemon.html">
@@ -299,8 +318,10 @@
               <div class="name-center">
     	  	  	  <p class="catalog-item-name">Сливочно-лимонное с карамельной присыпкой</p>
               </div>
-    	  	  </a>
-    	  	  <a class="button button-catalog" href="#">Быстрый просмотр</a>
+            </a>
+    	  	  <div class="shadow">
+              <a class="button button-catalog" href="#">Быстрый просмотр</a> 
+            </div>
     	  	</li>
     	  	<li class="catalog-item catalog-item-8">
     	  	  <a href="creame-chocolate.html">
@@ -310,7 +331,9 @@
     	  	  	  <p class="catalog-item-name">Сливочное с шоколадной стружкой</p>
               </div>
     	  	  </a>
-    	  	  <a class="button button-catalog" href="#">Быстрый просмотр</a>
+    	  	  <div class="shadow">
+              <a class="button button-catalog" href="#">Быстрый просмотр</a> 
+            </div>
     	  	</li>
     	  	<li class="catalog-item catalog-item-9">
     	  	  <a href="creamy-vanilla.html">
@@ -320,7 +343,9 @@
     	  	  	  <p class="catalog-item-name">Сливочно-ванильное с кусочками шоколада</p>
               </div>
     	  	  </a>
-    	  	  <a class="button button-catalog" href="#">Быстрый просмотр</a>
+    	  	  <div class="shadow">
+              <a class="button button-catalog" href="#">Быстрый просмотр</a> 
+            </div>
     	  	</li>
     	  	<li class="catalog-item catalog-item-10">
     	  	  <a href="lightblue.html">
@@ -330,7 +355,9 @@
     	  	  	  <p class="catalog-item-name">Сливочное с ментоловым сиропом</p>
               </div>
     	  	  </a>
-    	  	  <a class="button button-catalog" href="#">Быстрый просмотр</a>
+    	  	  <div class="shadow">
+              <a class="button button-catalog" href="#">Быстрый просмотр</a> 
+            </div>
     	  	</li>
     	  	<li class="catalog-item catalog-item-11">
     	  	  <a href="creamy-black-chocolate.html">
@@ -340,7 +367,9 @@
     	  	  	  <p class="catalog-item-name">Сливочное с кусочками чёрного шоколада</p>
               </div>
     	  	  </a>
-    	  	  <a class="button button-catalog" href="#">Быстрый просмотр</a>
+    	  	  <div class="shadow">
+              <a class="button button-catalog" href="#">Быстрый просмотр</a> 
+            </div>
     	  	</li>
     	  	<li class="catalog-item catalog-item-12">
     	  	  <a href="green-mint.html">
@@ -350,29 +379,33 @@
     	  	  	  <p class="catalog-item-name">Сливочное с мятным сиропом</p>
               </div>
     	  	  </a>
-    	  	  <a class="button button-catalog" href="#">Быстрый просмотр</a>
+    	  	  <div class="shadow">
+              <a class="button button-catalog" href="#">Быстрый просмотр</a> 
+            </div>
     	  	</li>
     	  </ul>
     	  <ul class="pagination-list">
-          <div class="icon icon-left">
+          <li class="pagination-item icon-left">
             <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
               <path d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/>
             </svg>
-          </div>
-          <div class="icon icon-right">
-            <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
-              <path d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/>
-            </svg>
-          </div>
+          </li>
           <li class="pagination-item"><a class="pagination-link pagination-link-current" href="#">1</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">5</a></li>
+          <li class="pagination-item icon-right">
+            <a class="pagination-link" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+                <path d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/>
+              </svg>
+            </a>
+          </li>
         </ul>
     	</section>
     </main>
-          <footer class="footer">
+    <footer class="footer">
       <div class="footer-social">
         <ul class="social-list">
           <li>

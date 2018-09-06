@@ -115,6 +115,7 @@ input:-moz-placeholder {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
 
   font-size: 16px;
   line-height: 18px;
@@ -133,26 +134,36 @@ input:-moz-placeholder {
 
 .site-nav {
   display: flex;
-  width: 43.3%;
+  width: 60%;
   margin: 0;
   padding: 0;
 }
 
 .site-nav a {
   color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
 }
 
 .site-nav-item {
   margin-right: 27px;
   padding: 6px 13px;
   box-sizing: border-box;
+}
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+.site-nav-item a:hover,
+.site-nav-item a:active {
+  color: rgb(255, 188, 158);
+
+  border-bottom: 1px solid rgba(255, 188, 158, 0.7);
+}
+
+.site-nav-item-1 a:first-child:hover, 
+.site-nav-item-1 a:first-child:active {
+  color: rgb(0, 0, 0);
 }
 
 .site-nav-item-1:hover {
-  color: rgb(0, 0, 0);
-
   background-color: rgb(255, 255, 255);
 
   border: none;
@@ -177,6 +188,13 @@ input:-moz-placeholder {
   color: #323232;
 } 
 
+.submenu-list a:hover,
+.submenu-list a:active {
+  color: rgb(255, 188, 158);
+
+  border-bottom: 1px solid rgba(255, 188, 158, 0.7);
+}
+
 .submenu-item {
   font-size: 14px;
   font-weight: 400;
@@ -198,7 +216,7 @@ input:-moz-placeholder {
 .user-nav-list {
   display: flex;
   justify-content: flex-end;
-  width: 43.3%;
+  width: 26.6%;
   margin: 0;
   padding: 0;
 }
@@ -269,7 +287,7 @@ input:-moz-placeholder {
 }
 
 .user-nav-item-search {
-  padding: 8px 10px;
+  padding: 8px;
   box-sizing: border-box;
 
   line-height: 0; 
@@ -312,12 +330,39 @@ input:-moz-placeholder {
   line-height: 24px;
 }
 
+.container-slider {
+  min-width: 866px;
+
+  background-color: #849d8f;
+  background-image: url("../img/cream-and-raspberry.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  transition: background-image 0.5s ease, background-color 0.5s ease;
+}
+
+.container-slider::before,
+.container-slider::after {
+  content: "";
+
+  visibility: hidden;
+}
+
+.site-wrapper::before {
+  background-image: url("img/slider-item2.png");
+}
+
+.site-wrapper::after {
+  background-image: url("img/slider-item3.png");
+}
+
 .slider {
   position: relative;
 
-  padding-top: 302px;
+  padding-top: 321px;
 
   text-align: center;
+  color: rgb(255, 255, 255);
 }
 
 .slider-list {
@@ -327,7 +372,7 @@ input:-moz-placeholder {
   list-style: none;
 }
 
-.slider-item {
+.slide {
   display: none;
 }
 
@@ -342,11 +387,62 @@ input:-moz-placeholder {
 }
 
 .slider-button {
+  margin-bottom: 40px;
   padding: 12px 44px;
 
   font-weight: 600;
   font-size: 31px;
   line-height: 41px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 63px;
+  left: 0;
+  z-index: 20;
+  
+  font-size: 0;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 8px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#product-1:checked ~ .container-slider {
+  background-color: #849d8f;
+  background-image: url("../img/cream-and-raspberry.png");
+}
+
+#product-2:checked ~ .container-slider {
+  background-color: #8996a6;
+  background-image: url("../img/chocolate-and-lemon.png");
+}
+
+#product-3:checked ~ .container-slider {
+  background-color: #9d8b84;
+  background-image: url("../img/fudge-and-sherbet.png");
+}
+
+#product-1:checked ~ .container-slider #slide-1,
+#product-2:checked ~ .container-slider #slide-2,
+#product-3:checked ~ .container-slider #slide-3 {
+  display: block;
+}
+
+#product-1:checked ~ .container-slider label[for="product-1"],
+#product-2:checked ~ .container-slider label[for="product-2"],
+#product-3:checked ~ .container-slider label[for="product-3"] {
+  background-color: #ffffff;
 }
 
 .banner-section {
@@ -356,7 +452,7 @@ input:-moz-placeholder {
 
 .banner {
   width: 50%;
-  height: 230px;
+  min-height: 230px;
   padding: 20px;
   box-sizing: border-box;
 
@@ -411,15 +507,50 @@ input:-moz-placeholder {
 }
 
 .catalog-item {
+  position: relative;
+
   width: 25%;
-  padding-left: 13px; 
-  padding-right: 13px;
+  padding: 9px 13px;
   box-sizing: border-box;
 }
 
-.catalog-item:hover {
-  background-color: rgba(255, 255, 255, 0.3);
+.catalog-item:hover * {
+  position: relative;
+  z-index: 4;
 }
+
+.button-catalog,
+.shadow {
+  display: none;
+}
+
+.catalog-item:hover .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  z-index: 2;
+
+  width: 100%;
+  height: calc(100% + 55px);
+  box-sizing: border-box;
+  
+  background-color: rgb(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 10px;
+}
+
+.catalog-item:hover .button-catalog {
+  position: absolute;
+  z-index: 6;
+  bottom: 3%;
+  left: 15%;
+
+  display: block;
+  max-width: 60%;
+}
+
 
 .hit {
   position: relative;
@@ -429,8 +560,8 @@ input:-moz-placeholder {
   content: "";
 
   position: absolute;
-  top: 10px;
-  left: 5px;
+  top: 9px;
+  left: 13px;
 
   width: 61px;
   height: 61px;
@@ -441,7 +572,7 @@ input:-moz-placeholder {
 
 .catalog-image {
   max-width: 100%;
-  max-height: 100%;
+  height: auto;
 
   border: none;
   border-radius: 50%;
@@ -501,7 +632,6 @@ input:-moz-placeholder {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-bottom: 20px;
   padding: 0;
 
   list-style: none;
@@ -700,6 +830,7 @@ input:-moz-placeholder {
 
 .footer {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   margin-top: 35px;
   margin-bottom: 25px;
@@ -708,10 +839,6 @@ input:-moz-placeholder {
 .footer-social,
 .footer-copyright {
   width: 30%;
-}
-
-.info-list {
- width: 40%;
 }
 
 .social-list {
@@ -742,7 +869,8 @@ input:-moz-placeholder {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 0 80px;
+  padding: 0;
+  max-width: 324px;
   
   font-size: 13px;
   font-weight: 400;
@@ -766,6 +894,13 @@ input:-moz-placeholder {
   font-weight: 700;
 }
 
+.info-item a:hover,
+.info-item a:active {
+  color: rgb(255, 188, 158);
+
+  border-bottom: 1px solid rgba(255, 188, 158, 0.7);
+}
+
 .info-item-1::before {
   content: "";
 
@@ -776,7 +911,7 @@ input:-moz-placeholder {
   width: 15px;
   height: 13px;
 
-  background-image: url(../img/heart.svg);
+  background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
 }
 
@@ -788,15 +923,15 @@ input:-moz-placeholder {
 
 .breadcrumbs-item {
   position: relative;
-  margin-right: 15px;
+  margin-right: 15px;	
 
   font-size: 14px;
   font-weight: 400;
-  line-height: 16px;	
-
-  list-style: none;
+  line-height: 16px;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+
+  list-style: none;
 }
 
 .double-bracket {
@@ -804,8 +939,18 @@ input:-moz-placeholder {
  right: -11px;
 }
 
+
+.breadcrumbs-item a:hover,
+.breadcrumbs-item a:active {
+  color: rgb(255, 188, 158);
+
+  border-bottom: 1px solid rgba(255, 188, 158, 0.7);
+}
+
 .breadcrumbs-current {
   background-image: none;
+
+  border: none;
 }
 
 .page-title {
@@ -913,6 +1058,7 @@ input:-moz-placeholder {
   width: 702px;
   height: 60px;
   margin: 0;
+  margin-top: 13px;
 
   border: none;
 }
@@ -939,6 +1085,7 @@ input:-moz-placeholder {
 
 .filter-text {
   font-size: 14px;
+  font-weight: 500;
   line-height: 16px;
 }
 
@@ -958,6 +1105,8 @@ input:-moz-placeholder {
 
   border: 2px solid rgb(255, 255, 255);
   border-radius: 50px;
+
+  cursor: pointer;
 }
 
 .filter-button:hover {
@@ -980,8 +1129,6 @@ input:-moz-placeholder {
 }
 
 .pagination-list {
-  position: relative;
-
   display: flex;
   justify-content: flex-end;
   margin-top: 80px;
@@ -989,24 +1136,16 @@ input:-moz-placeholder {
   list-style: none;
 }
 
-.icon-left {
-  position: absolute;
-  top: -5px;
-  right: 160px;
+.icon-left svg{
+  margin-right: 19px;
+
+  fill: rgb(255, 255, 255);
+  fill-opacity: 0.2;
 
   transform: rotate(180deg);
 }
 
-.icon-left svg {
-  fill: rgb(255, 255, 255);
-  fill-opacity: 0.2;
-}
-
-.icon-right {
-  position: absolute;
-  top: -2px;
-  right: -15px;
-
+.icon-right svg{
   fill: rgb(255, 255, 255);
 }
 
@@ -1017,7 +1156,8 @@ input:-moz-placeholder {
 }
 
 .pagination-link {
-  padding: 6px 10px;
+  margin-left: 3px;
+  padding: 6px 9px;
   box-sizing: border-box;
 
   border: none;
@@ -1057,7 +1197,7 @@ input:-moz-placeholder {
   width: 108px;
   height: 39px;
 
-  background-image: url(../img/logo-htmlacademy.svg);
+  background-image: url("../img/logo-htmlacademy.svg");
   background-repeat: no-repeat;
 }
 
@@ -1069,6 +1209,13 @@ input:-moz-placeholder {
 
 .copyright-text a{
   border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.copyright-text a:hover,
+.copyright-text a:active {
+  color: rgb(255, 188, 158);
+
+  border-bottom: 1px solid rgba(255, 188, 158, 0.7);
 }
 
 .active {
