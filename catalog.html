@@ -7,7 +7,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="catalog-page">
     <div class="wrapper">
     <header class="main-header">
       <nav class="main-nav">
@@ -16,26 +16,28 @@
         </a>
         <ul class="site-nav">
           <li class="site-nav-item site-nav-item-1 active"><span>Каталог</span>
-            <ul class="submenu-list">
-              <li class="submenu-item submenu-item-1">
-                <a class="submenu-new" href="new.html">Новинки</a>
-              </li> 
-              <li class="submenu-item submenu-item-2">
-                <a href="creamy.html">Сливочное</a>
-              </li>
-              <li class="submenu-item submenu-item-3">
+            <div class="submenu-container">
+              <ul class="submenu-list">
+                <li class="submenu-item submenu-item-1">
+                  <a class="submenu-new" href="new.html">Новинки</a>
+                </li> 
+                <li class="submenu-item submenu-item-2">
+                  <a href="catalog.html">Сливочное</a>
+                </li>
+                <li class="submenu-item submenu-item-3">
                 <a href="sherbets.html">Щербеты</a>
-              </li>
-              <li class="submenu-item submenu-item-4">
-                <a href="fruitice.html">Фруктовый лёд</a>
-              </li>
-              <li class="submenu-item submenu-item-5">
-                <a href="melorin.html">Мелорин</a>
-              </li>
-            </ul>
+                </li>
+                <li class="submenu-item submenu-item-4">
+                  <a href="fruitice.html">Фруктовый лёд</a>
+                </li>
+                <li class="submenu-item submenu-item-5">
+                  <a href="melorin.html">Мелорин</a>
+                </li>
+              </ul>
+            </div>
           </li>
           <li class="site-nav-item"><a href="delivery.html">Доставка и оплата</a></li>
-          <li class="site-nav-item"><a href="ab-company.html">О компании</a></li>
+          <li class="site-nav-item"><a href="ab-company.html">О Компании</a></li>
         </ul>
         <ul class="user-nav-list"> 
           <li class="user-nav-item user-nav-item-search">
@@ -137,6 +139,7 @@
     <h1 class="page-title">Сливочное мороженое</h1>
   	
   	<section class="filters">
+      <h2 class="visually-hidden">Фильтры</h2>
   	  <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="sorting-field">
           <legend>
@@ -153,9 +156,7 @@
         </fieldset>
         <fieldset class="price-field">
           <legend>
-            <label for="">
-              <span class="filter-text">Цена: 100 руб. - 500 руб.</span>
-            </label>
+            <span class="filter-text">Цена: 100 руб. - 500 руб.</span>
           </legend>
             <div class="drag-slider">
               <div class="drag-slider-body"></div>
@@ -354,7 +355,7 @@
               <path d="M7.237 5.642L1.73.132c-.2-.197-.52-.197-.717 0s-.198.52 0 .717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717.098.1.228.148.357.148.13 0 .26-.05.358-.148l5.51-5.51c.198-.197.198-.517 0-.715z"/>
             </svg>
           </li>
-          <li class="pagination-item"><a class="pagination-link-current" href="#">1</a></li>
+          <li class="pagination-item"><a class="pagination-link pagination-link-current" href="#">1</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
           <li class="pagination-item"><a class="pagination-link" href="#">4</a></li>
@@ -415,8 +416,8 @@
       </div>
       <ul class="info-list">
         <li class="info-item info-item-1"><a href="providers.html">Для поставщиков</a></li>
-        <li class="info-item info-item-2"><a href="producttion.html">О производстве</a></li>
-        <li class="info-item info-item-3"><a href="documents.html">Наши документы</a></li>
+        <li class="info-item info-item-2"><a href="producttion.html">Наши документы</a></li>
+        <li class="info-item info-item-3"><a href="documents.html">О производстве</a></li>
         <li class="info-item info-item-4"><a href="standarts.html">Экологические стандарты</a></li>
       </ul>
       <p class="footer-copyright">

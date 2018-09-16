@@ -19,27 +19,29 @@
   	          <img class="logo" src="img/logo.svg" width="154" height="64" alt="Логотип «Gllacy Shop»">	
             </a>
             <ul class="site-nav">
-  	 	        <li class="site-nav-item site-nav-item-1"><a href="catalog.html">Каталог</a>
-                <ul class="submenu-list">
-                  <li class="submenu-item submenu-item-1">
-                    <a class="submenu-new" href="new.html">Новинки</a>
-                  </li> 
-                  <li class="submenu-item submenu-item-2">
-                    <a href="creamy.html">Сливочное</a>
-                  </li>
-                  <li class="submenu-item submenu-item-3">
-                  <a href="sherbets.html">Щербеты</a>
-                  </li>
-                  <li class="submenu-item submenu-item-4">
-                    <a href="fruitice.html">Фруктовый лёд</a>
-                  </li>
-                  <li class="submenu-item submenu-item-5">
-                    <a href="melorin.html">Мелорин</a>
-                  </li>
-                </ul>
+  	 	        <li class="site-nav-item site-nav-item-1"><a href="#">Каталог</a>
+                <div class="submenu-container">
+                  <ul class="submenu-list">
+                    <li class="submenu-item submenu-item-1">
+                      <a class="submenu-new" href="new.html">Новинки</a>
+                    </li> 
+                    <li class="submenu-item submenu-item-2">
+                      <a href="catalog.html">Сливочное</a>
+                    </li>
+                    <li class="submenu-item submenu-item-3">
+                    <a href="sherbets.html">Щербеты</a>
+                    </li>
+                    <li class="submenu-item submenu-item-4">
+                      <a href="fruitice.html">Фруктовый лёд</a>
+                    </li>
+                    <li class="submenu-item submenu-item-5">
+                      <a href="melorin.html">Мелорин</a>
+                    </li>
+                  </ul>
+                </div>
               </li>
   	          <li class="site-nav-item"><a href="delivery.html">Доставка и оплата</a></li>
-  	   	      <li class="site-nav-item"><a href="ab-company.html">О компании</a></li>
+  	   	      <li class="site-nav-item"><a href="ab-company.html">О Компании</a></li>
   	        </ul>
   	        <ul class="user-nav-list"> 
   	          <li class="user-nav-item user-nav-item-search">
@@ -134,7 +136,7 @@
        	  	  <li class="catalog-item catalog-item-1 hit">
                 <p class="visually-hidden">ХИТ</p>
        	  	    <a href="orange-icecream.html">
-        	 	      <img class="catalog-image" src="img/creamy-orange.jpg"width="267" height="267" alt="Сливочно-бело-оранжевая прохладная мороженка">
+        	 	      <img class="catalog-image" src="img/creamy-orange.jpg" width="267" height="267" alt="Сливочно-бело-оранжевая прохладная мороженка">
         	  	    <p class="price"><span class="price-value">310 ₽</span>/кг</p>
                   <div class="name-center">
         	  	      <p class="catalog-item-name">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
@@ -189,8 +191,8 @@
     	        </ul>
           </section>
           
-          <h2 class="visually-hidden">Блог</h2>
           <div class="blog-subscribe-container">
+            <h2 class="visually-hidden">Блог</h2>
             <section class="blog">
                 <h3 class="blog-new">Новое в нашем блоге</h3>
                 <a class="blog-link" href="table-setting.html">10 способов сервировки фруктовых щербетов к столу</a>
@@ -198,8 +200,9 @@
       	  
             <div class="subscribe-back">
           	  <section class="subscribe">
+                <h2 class="visually-hidden">Рассылка</h2>
       	        <p class="subscribe-discription">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и   не слать всякой ненужной ерунды. Честно =)</p>
-      		        <form class="subscribe-form" >
+      		        <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
                     <label class="visually-hidden" for="subscribe">Введите электронную почту</label>
                     <input class="textarea textarea-subscribe" id="subscribe" type="text" name="subscribe" placeholder="Электронная почта">
                     <button class="button" type="submit">Отправить</button>
@@ -209,10 +212,12 @@
           </div>
     
       	  <section class="contact">
+            <iframe class="map" src="https://yandex.ru/map-widget/v1/-/CBBy7Nd5CB" width="1200" height="430" frameborder="1" allowfullscreen="true"></iframe> 
+            <img class="map-image" src="img/map.jpg" width="1200" height="430" alt="Карта">
             <div class="contact-container">
       	      <h2 class="visually-hidden">Адрес</h2>
       	      <p class="contact-adress">
-      	  	  <span class="contact-text">
+      	  	    <span class="contact-text">
                   Адрес главного офиса и офлайн-магазина: 
                   <span class="contact-text-bold">
                     ул. Большая Конюшенная 19/8, Санкт-Петербург
@@ -229,32 +234,8 @@
                 </span>
                 <form>
                   <button class="button feedback-button">Форма обратной связи</button>
-                </form>
-              </p>
+                </form> 
             </div>
-            <section class="modal modal-feedback">
-              <div class="feedback-container">
-                <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-                  <p>Мы обязательно вам ответим</p>
-                  <div class="fornm-item">
-                    <label class="visually-hidden" for="name">Введите ваше имя</label>
-                    <input class="textarea textarea-name" id="name" type="text" name="name" placeholder="Как вас зовут?">
-                  </div>
-                  <div class="form-item">
-                    <label class="visually-hidden" for="feedback">Введите вашу почту</label>
-                    <input class="textarea textarea-feedback" id="feedback" type="text" name="feedback" placeholder="Ваша почта для ответа?">
-                  </div>
-                  <div class="form-item">
-                    <label class="visually-hidden" for="comment">Оставьте комментарий</label>
-                    <input class="textarea textarea-comment" id="comment" type="text" name="comment" placeholder="Напишите что-нибудь...">
-                  </div>              
-                  <button class="button" type="submit">Отправить</button>
-                  <button class="modal-close" type="button">Закрыть</button>
-                </form>
-              </div>
-            </section>
-            <div class="overlay"></div>
-      	    <!-- MAP-MAP-MAP-MAP -->
       	  </section>
         </main>
         <footer class="footer">
@@ -303,8 +284,8 @@
           </div>
   	      <ul class="info-list">
   	        <li class="info-item info-item-1"><a href="providers.html">Для поставщиков</a></li>
-  	        <li class="info-item info-item-2"><a href="producttion.html">О производстве</a></li>
-  	        <li class="info-item info-item-3"><a href="documents.html">Наши документы</a></li>
+  	        <li class="info-item info-item-2"><a href="producttion.html">Наши документы</a></li>
+  	        <li class="info-item info-item-3"><a href="documents.html">О производстве</a></li>
   	        <li class="info-item info-item-4"><a href="standarts.html">Экологические стандарты</a></li>
   	      </ul>
   	      <p class="footer-copyright">
@@ -313,5 +294,27 @@
         </footer>
       </div>
     </div>
+    <section class="modal modal-feedback">
+      <h2 class="visually-hidden">Отзыв</h2>
+      <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>Мы обязательно вам ответим</p>
+        <div class="form-item">
+          <label class="visually-hidden" for="name">Введите ваше имя</label>
+          <input class="textarea textarea-name" id="name" type="text" name="name" placeholder="Как вас зовут?">
+        </div>
+        <div class="form-item">
+          <label class="visually-hidden" for="feedback">Введите вашу почту</label>
+          <input class="textarea textarea-feedback" id="feedback" type="text" name="feedback" placeholder="Ваша почта для ответа?">
+        </div>
+        <div class="form-item">
+          <label class="visually-hidden" for="comment">Оставьте комментарий</label>
+          <textarea class="textarea textarea-comment" id="comment" name="comment" placeholder="Напишите что-нибудь..."></textarea>
+        </div>
+        <button class="modal-close" type="button">Закрыть</button>              
+        <button class="button feedback-submit" type="submit">Отправить</button>
+      </form>
+    </section>
+    <div class="modal overlay"></div>
+    <script src="js/script.js"></script>
   </body>
 </html>
