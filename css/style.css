@@ -59,7 +59,7 @@ input::-webkit-input-placeholder,
 }
 
 input:-moz-placeholder,
-.feedback-form .textarea-comment:-moz-placeholder, {
+.feedback-form .textarea-comment:-moz-placeholder {
   color: rgb(153, 153, 153);
 }
 
@@ -762,6 +762,10 @@ input:-moz-placeholder,
   cursor: pointer;
 }
 
+.slider-controls label:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
 #product-1:checked ~ .container-slider {
   background-color: #849d8f;
   background-image: url("../img/cream-and-raspberry.png");
@@ -781,6 +785,12 @@ input:-moz-placeholder,
 #product-2:checked ~ .container-slider #slide-2,
 #product-3:checked ~ .container-slider #slide-3 {
   display: block;
+}
+
+#product-1:checked ~ .container-slider label[for="product-1"],
+#product-2:checked ~ .container-slider label[for="product-2"],
+#product-3:checked ~ .container-slider label[for="product-3"] {
+  background-color: #ffffff;
 }
 
 #product-1:checked ~ .container-slider label[for="product-1"],
@@ -963,7 +973,7 @@ input:-moz-placeholder,
 
 .about {
   margin-bottom: 40px;
-  padding: 25px 20px;
+  padding: 25px 0;
   box-sizing: border-box;
 
   color: #323232;
@@ -976,6 +986,7 @@ input:-moz-placeholder,
 
 .about-definition {
   margin: 0;
+  padding: 0 20px;
 
   font-size: 24px;
   font-weight: 500;
@@ -995,7 +1006,7 @@ input:-moz-placeholder,
   position: relative;
 
   width: 50%;
-  padding: 20px 0 0 55px;
+  padding: 20px 20px 0 75px;
   box-sizing: border-box;
 
   font-size: 16px;
@@ -1017,18 +1028,30 @@ input:-moz-placeholder,
 }
 
 .about-item-1::before {
+  left: 20px;
+  top: 12px;
+
   background-image: url("../img/ice-cream.svg");
 }
 
 .about-item-2::before {
+  top: 15px;
+  left: 12px;
+
   background-image: url("../img/cow.svg");
 }
 
 .about-item-3::before {
+  top: 17px;
+  left: 20px;
+
   background-image: url("../img/eco.svg");
 }
 
 .about-item-4::before {
+  top: 15px;
+  left: 12px;
+
   background-image: url("../img/thermometer.svg");
 }
 
@@ -1082,7 +1105,7 @@ input:-moz-placeholder,
   box-sizing: border-box;
 
   background-image: url("../img/bg-post.jpg");
-  background-size: 100%;
+  background-size: cover;
   border: none;
   border-radius: 15px;
 }
@@ -1120,18 +1143,18 @@ input:-moz-placeholder,
   position: relative;
 }
 
-.map {
-  width: 1200px;
-  height: 430px;
-  margin-left: -27px;
+.map, .map-image { 
+  width: 1200px; 
+  max-width: calc(100% + 54px); 
+  height: 430px; 
+  margin-left: -27px; 
+  margin-right: -27px; 
+  border: 0; 
 }
 
 .map-image {
-  display:  none;
-  max-width: 1200px;
-  height: 430px;
-  margin-left: -27px;
-}
+  display: none;
+} 
 
 .contact-container {
   position: absolute;
@@ -1630,11 +1653,16 @@ input:-moz-placeholder,
 
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
+  opacity: 0.7;
   transition: 0.2s;
 }
 
 .filter-radio:checked + label::before {
   background-image: url("../img/radio-on.svg");
+}
+
+.filter-radio + label:hover::before {
+  opacity: 1;
 }
 
 .fillers-field {
@@ -1700,6 +1728,7 @@ input:-moz-placeholder,
 
   background-image: url(../img/checkbox-off.svg);
   background-repeat: no-repeat;
+  opacity: 0.7;
 
   transition: 0.2s;
 }
@@ -1708,6 +1737,10 @@ input:-moz-placeholder,
   width: 27px;
 
   background-image: url("../img/checkbox-on.svg");
+}
+
+.filter-checkbox + label:hover::before {
+  opacity: 1;
 }
 
 .filter-container {
