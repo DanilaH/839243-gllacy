@@ -883,8 +883,8 @@ input:-moz-placeholder,
 
 .button-catalog {
   position: absolute;
-  right: 30px;
-  left: 30px;
+  right: 10px;
+  left: 10px;
   bottom: -13%;
   z-index: 30;
 
