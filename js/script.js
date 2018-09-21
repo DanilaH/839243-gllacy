@@ -21,10 +21,10 @@ feedbackButton.addEventListener("click", function (evt) {
   feedback.classList.add("feedback-show");
   overlay.classList.add("overlay-show");
   if (storage) {
-  	focusName.value = storage;
-  	email.focus();
+    focusName.value = storage;
+    email.focus();
   } else {
-  	focusName.focus();
+    focusName.focus();
   }
 });
 
@@ -37,14 +37,14 @@ close.addEventListener("click", function (evt) {
 
 form.addEventListener("submit", function (evt) {
   if (!focusName.value || !email.value || !comment.value) {
-  	evt.preventDefault();
-  	feedback.classList.remove("feedback-error");
-  	feedback.offsetWidth = form.offsetWidth;
-  	feedback.classList.add("feedback-error");
+    evt.preventDefault();
+    feedback.classList.remove("feedback-error");
+    feedback.offsetWidth = form.offsetWidth;
+    feedback.classList.add("feedback-error");
   } else {
-  	if (isStorageSupport) {
-  	  localStorage.setItem("name", name.value);
-  	}
+    if (isStorageSupport) {
+      localStorage.setItem("name", name.value);
+    }
   }
 })
 
