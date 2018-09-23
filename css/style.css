@@ -14,8 +14,8 @@ body {
 }
 
 .catalog-page {
-  -webkit-box-shadow: inset 0px 400px 100px -40px rgba(255, 255, 255, 0.1);
-          box-shadow: inset 0px 400px 100px -40px rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 0px 400px 300px -40px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0px 400px 300px -40px rgba(255, 255, 255, 0.2);
 }
 
 a {
@@ -57,13 +57,37 @@ input[type="password"]:focus,
   padding: 11px 14px;
 }
 
-input::-webkit-input-placeholder,
-.feedback-form .textarea-comment::-webkit-input-placeholder {
+input::-webkit-input-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+}
+ 
+input:-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
   color: rgb(153, 153, 153);
 }
 
-input:-moz-placeholder,
-.feedback-form .textarea-comment:-moz-placeholder {
+.textarea-subscribe::-webkit-input-placeholder,
+.textarea-name::-webkit-input-placeholder,
+.textarea-feedback::-webkit-input-placeholder,
+.textarea-comment::-webkit-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+}
+
+.textarea-subscribe:-moz-placeholder,
+.textarea-comment:-moz-placeholder,
+.textarea-feedback:-moz-placeholder,
+.textarea-comment:-moz-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
   color: rgb(153, 153, 153);
 }
 
@@ -592,14 +616,14 @@ input:-moz-placeholder,
 
 .login-text a {
   font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
   color: #323232;
-
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-decoration: underline;
 }
 
 .login-text a:hover {
-  border: none;
-  padding-bottom: 1px;
+  text-decoration: none;
 }
 
 .user-nav-item-login:hover .modal-login {
@@ -970,7 +994,7 @@ input:-moz-placeholder,
 .banner {
   width: 50%;
   min-height: 230px;
-  padding: 19px;
+  padding: 17px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1004,7 +1028,7 @@ input:-moz-placeholder,
 
 .banner-text {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 44px;
 
   font-size: 18px;
   line-height: 22px;
@@ -1022,9 +1046,6 @@ input:-moz-placeholder,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 0;
   margin-left: -13px; 
   margin-right: -13px;
@@ -1038,7 +1059,7 @@ input:-moz-placeholder,
   position: relative;
   
   width: 25%;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   padding: 9px 13px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1138,6 +1159,7 @@ input:-moz-placeholder,
   z-index: 25;
 
   margin-top: -10px;
+  padding: 0 5px;
 
   text-align: center;
 }
@@ -1161,7 +1183,8 @@ input:-moz-placeholder,
 }
 
 .about {
-  margin-bottom: 35px;
+  margin-bottom: 37px;
+  margin-top: 9px;
   padding: 25px 0 20px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1264,7 +1287,7 @@ input:-moz-placeholder,
   width: 50%;
   min-height: 220px;
   margin-right: 2.3%;
-  padding: 25px 20px;
+  padding: 23px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1302,6 +1325,10 @@ input:-moz-placeholder,
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+.blog-link:hover {
+  color: rgb(232, 77, 55);
+}
+
 .subscribe-back {
   width: 50%;
   min-height: 220px;
@@ -1317,7 +1344,7 @@ input:-moz-placeholder,
 
 .subscribe {
   min-height: 210px;
-  padding: 16px 20px;
+  padding: 13px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1332,7 +1359,7 @@ input:-moz-placeholder,
 } 
 
 .subscribe-discription {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 }
 
 .subscribe-form {
@@ -1345,8 +1372,8 @@ input:-moz-placeholder,
 }
 
 .subscribe-form input{
-  width: 72%;
-  margin-right: 11px;
+  width: 76%;
+  margin-right: 12px;
 }
 
 .subscribe-button {
@@ -1588,7 +1615,7 @@ input:-moz-placeholder,
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  margin-top: 8px; 
+  margin-top: 4px; 
   padding: 0;
   
   list-style: none;
@@ -1602,6 +1629,12 @@ input:-moz-placeholder,
 
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 50%;
+
+  -webkit-transform: scale(1.1);
+
+      -ms-transform: scale(1.1);
+
+          transform: scale(1.1);
 }
 
 .social-list svg:hover {
@@ -1639,8 +1672,8 @@ input:-moz-placeholder,
   position: relative;
 
   min-width: 110px;
-  margin-right: 10px;
-  padding: 3px 10px;
+  margin-right: 14px;
+  padding: 1px 10px 3px 8px;
 }
 
 .info-item-2,
@@ -1688,7 +1721,7 @@ input:-moz-placeholder,
   display: -ms-flexbox;
   display: flex;
   margin-top: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   padding: 0;
 }
 
@@ -1808,7 +1841,12 @@ input:-moz-placeholder,
 
   -webkit-appearance: none;
   -moz-appearance: none;
+  -ms-appearance: none;
   appearance: none;
+}
+
+.sorting::-ms-expand {
+  display: none;
 }
 
 .sorting-container:hover .sorting,
@@ -1911,14 +1949,13 @@ input:-moz-placeholder,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0;
-  padding: 5px 20px 5px 48px;
+  padding: 4px 5px 7px 8px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1933,6 +1970,8 @@ input:-moz-placeholder,
 
 .filter-radio-item {
   position: relative;
+  
+  padding: 3px 10px 3px 40px;
 }
 
 .filter-radio {
@@ -1965,6 +2004,12 @@ input:-moz-placeholder,
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
   opacity: 0.7;
+
+  -webkit-transform: scale(0.9);
+
+      -ms-transform: scale(0.9);
+
+          transform: scale(0.9);
 }
 
 .filter-radio:checked + label::before {
@@ -1990,9 +2035,9 @@ input:-moz-placeholder,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   max-width: 702px;
@@ -2000,10 +2045,9 @@ input:-moz-placeholder,
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-  padding: 5px 17px 5px 45px;
+  padding: 6px 5px 7px 8px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 36px;
 
   list-style: none;
 
@@ -2015,6 +2059,8 @@ input:-moz-placeholder,
 
 .filter-checkbox-item {
   position: relative;
+
+  padding: 3px 13px 3px 40px;
 
   font-size: 16px;
   font-weight: 500;
@@ -2041,7 +2087,7 @@ input:-moz-placeholder,
   content: "";
   position: absolute;
   top: -2px;
-  left: -32px;
+  left: -34px;
 
   width: 23px;
   height: 23px;
@@ -2049,6 +2095,12 @@ input:-moz-placeholder,
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   opacity: 0.7;
+
+  -webkit-transform: scale(0.9);
+
+      -ms-transform: scale(0.9);
+
+          transform: scale(0.9);
 }
 
 .filter-checkbox:checked + label::before {
@@ -2110,17 +2162,25 @@ input:-moz-placeholder,
 }
 
 .filter-button:hover {
+  padding: 10px 27px;
+
   color: rgb(50, 50, 50);
 
   background-color: rgb(255, 255, 255);
+
+  border: none;
 }
 
 .filter-button:active {
+  padding: 10px 27px;
+
   color: rgb(50, 50, 50);
 
   background-color: rgb(237, 237, 237);
   -webkit-box-shadow: inset 0px 1px 1px 1px rgba(105, 105, 105, 0.9);
           box-shadow: inset 0px 1px 1px 1px rgba(105, 105, 105, 0.9);
+
+  border: none;
 }
 
 .pagination-list {
@@ -2133,7 +2193,7 @@ input:-moz-placeholder,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 48px;
+  margin-top: 55px;
   margin-bottom: 30px;
   padding: 0;
 
@@ -2217,7 +2277,7 @@ input:-moz-placeholder,
   content: "";
 
   position: absolute;
-  top: -10px;
+  top: -14px;
   right: 80px;
 
   width: 108px;
