@@ -27,8 +27,8 @@ input[type="text"],
 input[type="password"],
 .feedback-form .textarea-comment {
   min-width: 200px;
-  height: 44px;
-  padding: 12px 15px;
+  height: 43px;
+  padding: 10px 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -47,14 +47,14 @@ input[type="text"]:hover,
 input[type="password"]:hover,
 .feedback-form .textarea-comment:hover {
   border: 2px solid rgb(199, 198, 197);
-  padding: 11px 14px;
+  padding: 9px 11px;
 }
 
 input[type="text"]:focus,
 input[type="password"]:focus,
 .feedback-form .textarea-comment:focus {
   border: 2px solid rgb(143, 189, 236);
-  padding: 11px 14px;
+  padding: 9px 11px;
 }
 
 input::-webkit-input-placeholder {
@@ -65,6 +65,13 @@ input::-webkit-input-placeholder {
 }
  
 input:-moz-placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+}
+
+input:-ms-input-placeholder {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -82,13 +89,29 @@ input:-moz-placeholder {
 }
 
 .textarea-subscribe:-moz-placeholder,
-.textarea-comment:-moz-placeholder,
+.textarea-name:-moz-placeholder,
 .textarea-feedback:-moz-placeholder,
 .textarea-comment:-moz-placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
   color: rgb(153, 153, 153);
+}
+
+.textarea-subscribe::-ms-input-placeholder,
+.textarea-name::-ms-input-placeholder,
+.textarea-feedback::-ms-input-placeholder,
+.textarea-comment::-ms-input-placeholder {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgb(153, 153, 153);
+}
+
+.user-nav-list {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
 }
 
 .modal {
@@ -291,7 +314,7 @@ input:-moz-placeholder {
 
 .logo-link {
   display: block;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .site-nav,
@@ -308,7 +331,7 @@ input:-moz-placeholder {
       flex-wrap: wrap;
   max-width: 720px;
   margin: 0;
-  margin-bottom: 7px; 
+  margin-bottom: 10px; 
   padding: 0;
 }
 
@@ -321,8 +344,7 @@ input:-moz-placeholder {
 .site-nav-item {
   position: relative;
   
-  margin-right: 3px;
-  padding: 6px 13px;
+  padding: 7px 14px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -372,10 +394,10 @@ input:-moz-placeholder {
   z-index: 20;
 
   width: 143px;
-  height: 170px;
   margin: 0;
   padding: 0;
   padding-top: 4px;
+  padding-bottom: 6px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -391,7 +413,7 @@ input:-moz-placeholder {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
-  padding: 9px 8px 8px 12px;
+  padding: 9px 8px 6px 14px;
 
   margin-left: 6px;
   margin-right: 9px;
@@ -421,6 +443,8 @@ input:-moz-placeholder {
 }
 
 .site-nav-item-1:hover .submenu-new {
+  padding-bottom: 10px;  
+
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
@@ -451,15 +475,15 @@ input:-moz-placeholder {
           justify-content: flex-end;
   margin: 0;
   margin-left: auto;
-  margin-bottom: 5px;
+  margin-bottom: 12px;
   padding: 0;
 }
 
 .user-nav-item {
   position: relative;
 
-  margin-left: 10px;
-  padding: 5px 16px;
+  margin-left: 9px;
+  padding: 8px 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -531,6 +555,11 @@ input:-moz-placeholder {
   display: block;
 }
 
+.user-nav-item input {
+  font-size: 14px;
+  line-height: 24px;
+}
+
 .user-nav-item-login {
   position: relative;
 
@@ -542,7 +571,7 @@ input:-moz-placeholder {
 
   position: absolute;
   top: 6px;
-  left: 15px;
+  left: 17px;
 
   width: 61px;
   height: 61px;
@@ -641,7 +670,7 @@ input:-moz-placeholder {
 
   position: absolute;
   top: 6px;
-  left: 15px;
+  left: 17px;
 
   width: 61px;
   height: 61px;
@@ -988,13 +1017,13 @@ input:-moz-placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 33px;
+  margin-bottom: 31px;
 }
 
 .banner {
   width: 50%;
   min-height: 230px;
-  padding: 17px 20px;
+  padding: 15px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1059,7 +1088,7 @@ input:-moz-placeholder {
   position: relative;
   
   width: 25%;
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   padding: 9px 13px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1183,9 +1212,9 @@ input:-moz-placeholder {
 }
 
 .about {
-  margin-bottom: 37px;
-  margin-top: 9px;
-  padding: 25px 0 20px 0;
+  margin-bottom: 40px;
+  margin-top: 7px;
+  padding: 25px 20px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1198,9 +1227,8 @@ input:-moz-placeholder {
 }
 
 .about-definition {
-  margin: 0;
-  margin-bottom: 7px;
-  padding: 0 20px;
+  margin: 0 0 8px;
+  padding: 0;
 
   font-size: 24px;
   font-weight: 500;
@@ -1223,7 +1251,7 @@ input:-moz-placeholder {
   position: relative;
 
   width: 50%;
-  padding: 15px 20px 8px 75px;
+  padding: 14px 13px 8px 55px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1236,8 +1264,8 @@ input:-moz-placeholder {
   content: "";
 
   position: absolute;
-  top: 5px;
-  left: 12px;
+  top: 0;
+  left: 0;
 
   width: 49px;
   height: 49px;
@@ -1245,32 +1273,28 @@ input:-moz-placeholder {
   background-repeat: no-repeat;
 }
 
-.about-item-1::before {
-  top: 5px;
-  left: 20px;
+.about-item:nth-of-type(2n):before {
+  left:13px; 
+}
 
+.about-item-1::before {
   background-image: url("../img/ice-cream.svg");
 }
 
 .about-item-2::before {
-  top: 5px;
-  left: 12px;
-
   background-image: url("../img/cow.svg");
 }
 
 .about-item-3::before {
-  top: 5px;
-  left: 20px;
-
   background-image: url("../img/eco.svg");
 }
 
 .about-item-4::before {
-  top: 5px;
-  left: 12px;
-
   background-image: url("../img/thermometer.svg");
+}
+
+.about-item:nth-of-type(2n) {
+  padding-left: 70px;
 }
 
 .blog-subscribe-container {
@@ -1371,13 +1395,13 @@ input:-moz-placeholder {
           justify-content: flex-start;
 }
 
-.subscribe-form input{
-  width: 76%;
-  margin-right: 12px;
+.subscribe-button {
+  width: 130px;
 }
 
-.subscribe-button {
-  width: 26%;
+.subscribe-form input{
+  width: 74%;
+  margin-right: 12px;
 }
 
 .contact {
@@ -1439,7 +1463,7 @@ input:-moz-placeholder {
 .contact-text-bold {
   display: block;
 
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 
   font-size: 18px;
   font-weight: 700;
@@ -1455,7 +1479,7 @@ input:-moz-placeholder {
 .contact-text-time {
   display: block;
 
-  padding-bottom: 8px;
+  padding-bottom: 11px;
 }
 
 .feedback-button {
@@ -1622,19 +1646,14 @@ input:-moz-placeholder {
 }
 
 .social-list svg {
-  margin-right: 14px;
+  margin-right: 11px;
 
   fill: rgb(255, 255, 255);
   fill-opacity: 0.7;
 
-  border: 2px solid rgba(255, 255, 255, 0.2);
+  background-size: cover;
+  border: 3px solid rgba(255, 255, 255, 0.3);
   border-radius: 50%;
-
-  -webkit-transform: scale(1.1);
-
-      -ms-transform: scale(1.1);
-
-          transform: scale(1.1);
 }
 
 .social-list svg:hover {
@@ -1710,24 +1729,18 @@ input:-moz-placeholder {
   background-repeat: no-repeat;
 }
 
-.catalog-main {
-  margin-bottom: 30px;
-
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
 .breadcrumbs-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 18px;
+  margin-top: 17px;
   margin-bottom: 3px;
   padding: 0;
 }
 
 .breadcrumbs-item {
   position: relative;
-  margin-right: 22px; 
+  margin-right: 21px; 
 
   font-size: 14px;
   font-weight: 400;
@@ -1774,7 +1787,7 @@ input:-moz-placeholder {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 860px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .form-filter fieldset {
@@ -1868,7 +1881,7 @@ input:-moz-placeholder {
   position: relative;
 
   width: 218px;
-  padding: 16px;
+  padding: 16px 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1879,14 +1892,14 @@ input:-moz-placeholder {
 }
 
 .drag-slider-body {
-  width: 186px;
+  width: 178px;
   height: 4px;
   padding-left: 23px;
   padding-right: 53px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .drag-slider-line {
@@ -1919,13 +1932,13 @@ input:-moz-placeholder {
 }
 
 .drag-slider-handle-left {
-  top: 8px;
-  left: 39px;
+  top: 7px;
+  left: 35px;
 }
 
 .drag-slider-handle-right {
-  top: 8px;
-  right: 63px;
+  top: 7px;
+  right: 65px;
 }
 
 .price-field {
@@ -1955,7 +1968,7 @@ input:-moz-placeholder {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
-  padding: 4px 5px 7px 8px;
+  padding: 4px 5px 4px 7px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -1971,7 +1984,7 @@ input:-moz-placeholder {
 .filter-radio-item {
   position: relative;
   
-  padding: 3px 10px 3px 40px;
+  padding: 4px 10px 5px 40px;
 }
 
 .filter-radio {
@@ -1995,21 +2008,16 @@ input:-moz-placeholder {
 .filter-radio + label::before {
   content: "";
   position: absolute;
-  top: -3px;
-  left: -33px;
+  top: -2px;
+  left: -31px;
 
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
 
   background-image: url("../img/radio-off.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   opacity: 0.7;
-
-  -webkit-transform: scale(0.9);
-
-      -ms-transform: scale(0.9);
-
-          transform: scale(0.9);
 }
 
 .filter-radio:checked + label::before {
@@ -2026,7 +2034,7 @@ input:-moz-placeholder {
   width: 702px;
   height: 60px;
   margin: 0;
-  margin-top: 12px;
+  margin-top: 14px;
 
   border: none;
 }
@@ -2060,11 +2068,15 @@ input:-moz-placeholder {
 .filter-checkbox-item {
   position: relative;
 
-  padding: 3px 13px 3px 40px;
+  padding: 2px 13px 3px 40px;
 
   font-size: 16px;
   font-weight: 500;
   line-height: 18px;
+}
+
+.filter-checkbox-item:nth-child(5n) {
+  padding-right: 8px;
 }
 
 .filter-checkbox {
@@ -2089,18 +2101,13 @@ input:-moz-placeholder {
   top: -2px;
   left: -34px;
 
-  width: 23px;
-  height: 23px;
+  width: 21px;
+  height: 21px;
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+  background-size: contain;
   opacity: 0.7;
-
-  -webkit-transform: scale(0.9);
-
-      -ms-transform: scale(0.9);
-
-          transform: scale(0.9);
 }
 
 .filter-checkbox:checked + label::before {
@@ -2136,13 +2143,17 @@ input:-moz-placeholder {
   line-height: 16px;
 }
 
+.filter-text-drag {
+  margin-left: 14px;
+}
+
 .filter-button {
   -ms-flex-item-align: end;
       align-self: flex-end;
 
 
   height: 36px;
-  margin-bottom: 1px;
+  margin-bottom: 2px;
   padding: 8px 25px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -2193,9 +2204,13 @@ input:-moz-placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 55px;
-  margin-bottom: 30px;
+  margin: 0;
+  margin-top: 52px;
+  margin-bottom: 31px;
   padding: 0;
+  padding-bottom: 30px;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 
   list-style: none;
 }
@@ -2221,7 +2236,6 @@ input:-moz-placeholder {
 }
 
 .icon-right svg{
-
   fill: rgb(255, 255, 255);
 }
 
